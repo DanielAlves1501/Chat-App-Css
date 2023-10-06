@@ -1,0 +1,109 @@
+@import url('./phone/phone.css');
+@import url('/css/mediaqueries/mediaqueries.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    
+/* ## Colors */
+
+/* ### Primary */
+
+/* #### Text */
+
+--Pale-Violet: hsl(276, 100%, 81%);
+--Moderate-Violet: hsl(276, 55%, 52%);
+--Desaturated-Dark-Violet : hsl(271, 15%, 43%);
+--Grayish-Blue : hsl(206, 6%, 79%);
+--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+--Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+/* #### Gradients */
+
+/* These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+--Light-Magenta: hsl(293, 100%, 63%);
+--Light-Violet: hsl(264, 100%, 61%);
+
+/* ### Secondary */
+
+--White: hsl(0, 0%, 100%);
+--Light-Grayish-Violet: hsl(270, 20%, 96%);
+--Very-Dark-Desaturated-Violet : hsl(271, 36%, 24%);
+--Very-Light-Magenta : hsl(289, 100%, 72%);
+}
+
+body{
+    position: relative;
+    background-color: var(--Light-Grayish-Violet);
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* BACKGROUND SHAPES */
+
+.purple-shape{
+    width: 25vw;
+    min-width: 250px;
+    height: 90vh;
+    background: linear-gradient(var(--Light-Magenta),var(--Light-Violet) ) ;
+    position: fixed;
+    top: 0;
+    left: -3%;
+    border-radius: 0 0 200px 200px;
+    z-index: -1;
+}
+
+.gray-shape{
+    width: 23vw;
+    min-width: 250px;
+    height: 90vh;
+    background: var(--Grayish-Blue);
+    opacity: .2;
+    position: fixed;
+    right: -5%;
+    bottom: 0;
+    border-radius: 200px 200px 0 0;
+    z-index: -1;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    min-height: 100vh;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.info__title{
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.info__description{
+    color: var(--Dark-Grayish-Violet);
+    line-height: 27px;
+}
